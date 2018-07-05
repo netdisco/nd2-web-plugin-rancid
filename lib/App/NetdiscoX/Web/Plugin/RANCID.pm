@@ -35,16 +35,25 @@ hook 'before_template' => sub {
     my $rancid = $config->{rancid};
 
     $rancid->{groups}      ||= {};
+    $rancid->{excluded}    ||= [];
     $rancid->{by_ip}       ||= [];
     $rancid->{by_hostname} ||= [];
+
+    if (check_acl(get_device($device->{ip}),$rancid->{excluded})) {
+        session rancid_display => 0;
+    } else {
+        session rancid_display => 1;
+    }
 
     foreach my $g (keys %{ $rancid->{groups} }) {
         if (check_acl( get_device($device->{ip}), $rancid->{groups}->{$g} )) {
             $tokens->{rancidgroup} = $g;
-            $tokens->{ranciddevice} = $device->{ip}
-              if 0 < scalar grep {$_ eq $g} @{ $rancid->{by_ip} };
-            $tokens->{ranciddevice} =~ s/$domain_suffix$//
-              if 0 < scalar grep {$_ eq $g} @{ $rancid->{by_hostname} };
+            if (check_acl( get_device($device->{ip}),$rancid->{by_hostname})) { 
+                $tokens->{ranciddevice} =~ s/$domain_suffix$//; 
+            } elsif (check_acl( get_device($device->{ip}), $rancid->{by_ip})) { 
+                $tokens->{ranciddevice} = $device->{ip}; 
+            }
+            
             last;
         }
     }
