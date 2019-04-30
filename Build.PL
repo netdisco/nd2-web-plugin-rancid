@@ -6,6 +6,7 @@ Module::Build->new(
   module_name => 'App::NetdiscoX::Web::Plugin::RANCID',
   license     => 'bsd',
   dynamic_config => 1,
+  create_readme => 1,
   configure_requires => {
     'ExtUtils::MakeMaker' => 0,
     'File::ShareDir::Install' => '0.06',
@@ -18,6 +19,11 @@ Module::Build->new(
     'App::Netdisco' => '2.042007',
     'Dancer' => '1.3132',
     'File::ShareDir' => 0,
+  },
+  test_requires => {
+    'Test::More' => '0.88',
+    'Test::Distribution' => '0',
+    'Test::Pod'  => '0',
   },
   share_dir => {
     'dist' => 'share',

@@ -32,6 +32,13 @@
             "Dancer" : "1.3132",
             "File::ShareDir" : "1.00"
          }
+      },
+      "test" : {
+         "requires" : {
+            "Test::Distribution" : "0",
+            "Test::More" : "0.88",
+            "Test::Pod" : "0"
+         }
       }
    },
    "provides" : {

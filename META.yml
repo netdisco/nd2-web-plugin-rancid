@@ -4,6 +4,9 @@ author:
   - 'Oliver Gorwits <oliver@cpan.org>'
 build_requires:
   Module::Build: '0.42'
+  Test::Distribution: '0'
+  Test::More: '0.88'
+  Test::Pod: '0'
 configure_requires:
   ExtUtils::MakeMaker: '0'
   File::ShareDir::Install: '0.06'

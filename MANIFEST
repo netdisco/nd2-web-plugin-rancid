@@ -5,4 +5,8 @@ LICENCE
 MANIFEST
 META.json
 META.yml
+README
 share/views/plugin/rancid/device_details.tt
+xt/00_local_distribution.t
+xt/00_local_perlcritic.t
+xt/00_local_pod.t

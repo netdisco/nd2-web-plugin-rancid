@@ -4,6 +4,7 @@
     excluded parameter
   * overhaul to use Module::Build
   * refer to MakeRancidConf instead of netdisco-rancid-export
+  * add basic tests
 
 2.004000 - 2014-07-13
 
