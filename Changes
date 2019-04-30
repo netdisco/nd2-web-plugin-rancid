@@ -1,3 +1,10 @@
+2.005000 - 2019-04-29
+
+  * implement earendilfr's patches to use check_acl & take into account
+    excluded parameter
+  * overhaul to use Module::Build
+  * refer to MakeRancidConf instead of netdisco-rancid-export
+
 2.004000 - 2014-07-13
 
   * Added by_hostname config option support
