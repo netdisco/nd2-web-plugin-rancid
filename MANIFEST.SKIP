@@ -80,5 +80,5 @@
 # Avoid archives of this distribution
 \bApp-NetdiscoX-Web-Plugin-RANCID-[\d\.\_]+
 
-# ignore intellij
+# ignore intellij project directory
 \B\.idea
