@@ -61,6 +61,14 @@ hook 'before_template' => sub {
     }
 };
 
+1;
+
+__END__
+
+=pod
+
+=cut
+
 =head1 NAME
 
 App::NetdiscoX::Web::Plugin::RANCID - Link to device backups in RANCID/WebSVN
@@ -132,25 +140,13 @@ same browser window or tab as Netdisco.
 
 =head1 SEE ALSO
 
-=over 4
-
-=item *
-
 L<App::Netdisco::Worker::Plugin::MakeRancidConf>
-
-=item *
 
 L<http://www.shrubbery.net/rancid/>
 
-=item *
-
 L<https://websvnphp.github.io/>
 
-=item *
-
 L<https://github.com/viewvc/viewvc/>
-
-=back
 
 =head1 AUTHOR
 
@@ -183,5 +179,3 @@ This software is copyright (c) 2013,2019 by The Netdisco Developer Team.
  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 =cut
-
-true;
