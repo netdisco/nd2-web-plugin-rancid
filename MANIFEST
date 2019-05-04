@@ -2,7 +2,7 @@ Build.PL
 Changes
 lib/App/NetdiscoX/Web/Plugin/RANCID.pm
 LICENCE
-MANIFEST
+MANIFEST			This list of files
 META.json
 META.yml
 README

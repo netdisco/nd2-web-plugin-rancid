@@ -10,7 +10,7 @@
    ],
    "meta-spec" : {
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
-      "version" : 2
+      "version" : "2"
    },
    "name" : "App-NetdiscoX-Web-Plugin-RANCID",
    "prereqs" : {
@@ -54,7 +54,7 @@
       },
       "homepage" : "http://netdisco.org/",
       "license" : [
-         "http://opensource.org/licenses/BSD-3-Clause"
+         "http://opensource.org/licenses/bsd-license.php"
       ],
       "repository" : {
          "url" : "https://github.com/netdisco/nd2-web-plugin-rancid"
@@ -63,5 +63,5 @@
       "x_MailingList" : "https://lists.sourceforge.net/lists/listinfo/netdisco-users"
    },
    "version" : "2.005000",
-   "x_serialization_backend" : "JSON::PP version 4.02"
+   "x_serialization_backend" : "JSON::PP version 2.27400_02"
 }
