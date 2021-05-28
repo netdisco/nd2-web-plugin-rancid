@@ -28,7 +28,7 @@ requires:
   Dancer: '1.3132'
   File::ShareDir: '1.00'
 resources:
-  IRC: irc://irc.freenode.org/#netdisco
+  IRC: irc://irc.libera.chat/#netdisco
   MailingList: https://lists.sourceforge.net/lists/listinfo/netdisco-users
   bugtracker: https://github.com/netdisco/nd2-web-plugin-rancid/issues
   homepage: http://netdisco.org/
