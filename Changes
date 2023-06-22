@@ -1,3 +1,7 @@
+2.006200 - 2023-06-19
+
+  * Replace the funcion check_acl by acl_matches as used in the last Netdisco package
+
 2.006000 - 2019-05-30
 
   * use env instead of direct reference to perl for tests
