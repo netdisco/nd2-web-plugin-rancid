@@ -1,6 +1,6 @@
-2.006200 - 2023-06-19
+2.006001 - 2023-06-22
 
-  * Replace the funcion check_acl by acl_matches as used in the last Netdisco package
+  * replace the funcion check_acl by acl_matches
 
 2.006000 - 2019-05-30
 
